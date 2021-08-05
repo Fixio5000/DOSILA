@@ -1,0 +1,21 @@
+<ion-content *ngIf="user$ | async as user" class="ion-text-center">
+
+    <ion-avatar>
+    <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/03/cursos-musica.jpg">
+    </ion-avatar>
+
+  <p> {{user.displayName}}</p>
+  <p> {{user.email}}</p>
+
+  <ion-button type="submit"  (click)="onLogout()" shape="round" strong="true" class="ion-margin-end" color="oro">
+    {{ "CERRAR" | translate }}
+    <ion-icon name="log-out" slot="end"></ion-icon>
+  </ion-button>
+
+  <ion-item>
+    <ion-label>{{ "IDIOMA" | translate }}</ion-label>
+      <ion-select cancelText="Cancel"  (ionChange)="changeLang($event)">
+        <ion-select-option  *ngFor="let lang of langs">{{ lang }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-content>

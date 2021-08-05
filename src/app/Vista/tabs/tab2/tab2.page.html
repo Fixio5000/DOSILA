@@ -1,0 +1,145 @@
+<ion-content [fullscreen]="true">    
+  <div class="movimientos">
+    <ion-img class="movimiento" src="../../assets/img/nota.png"></ion-img>
+    <ion-img class="movimiento" src="../../assets/img/nota.png"></ion-img>
+  </div>
+  
+    <h3 align="center"><ion-label>{{ "TIPSDECUIDADO" | translate }}</ion-label></h3>
+    <h5 align="center"><ion-label>{{ "METALES" | translate }}</ion-label></h5>
+
+    <ion-slides [options]="option" class="ion-margin-top">
+
+          <ion-slide>
+            <ion-card routerLink="trompeta">
+              <ion-img class="h" src="../../assets/img/trompeta.svg"></ion-img>
+              <ion-card-header>
+                <ion-card-title>{{ "TROMPETA" | translate }}</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-slide>
+
+        <ion-slide>
+          <ion-card routerLink="trompa">
+            <ion-img class="h" src="../../assets/img/trompa.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "TROMPA" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card routerLink="trombon">
+            <ion-img class="h" src="../../assets/img/trombon.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "TROMBON" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card routerLink="saxofon">
+            <ion-img class="h" src="../../assets/img/saxofon.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "SAXOFON" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+      </ion-slide>
+    </ion-slides>
+
+      <ion-row align="center">
+        <ion-col>
+          <h5><ion-label >{{ "CUERDAS" | translate }}</ion-label></h5>
+        </ion-col>
+      </ion-row>
+      
+        <ion-slides [options]="option" class="ion-margin-top">
+
+          <ion-slide>
+          <ion-card routerLink="violin">
+            <ion-img class="h" src="../../assets/img/violin.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "VIOLÍN" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+          <ion-slide>
+          <ion-card routerLink="violonchelo">
+            <ion-img class="h" src="../../assets/img/violonchelo.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "VIOLONCHELO" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+          <ion-slide>
+          <ion-card routerLink="guitarra">
+            <ion-img class="h" src="../../assets/img/guitarra-acustica.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "GUITARRA" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+          
+          <ion-slide>
+          <ion-card routerLink="arpa">
+            <ion-img class="h" src="../../assets/img/arpa.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "ARPA" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+          
+
+
+
+      <ion-row align="center">
+        <ion-col>
+          <h5><ion-label>{{ "PERCUSION" | translate }}</ion-label></h5>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-slides [options]="option" class="ion-margin-top">
+
+
+        <ion-slide>
+          <ion-card routerLink="tambor">
+            <ion-img class="h" src="../../assets/img/tambor.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "TAMBOR" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+
+          <ion-slide>
+          <ion-card routerLink="bombo">
+            <ion-img class="h" src="../../assets/img/bombo.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "BOMBO" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+          <ion-slide>
+          <ion-card routerLink="platillos">
+            <ion-img class="h" src="../../assets/img/platillos.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "PLATILLOS" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+
+          <ion-slide>
+          <ion-card routerLink="conga">
+            <ion-img class="h" src="../../assets/img/conga.svg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>{{ "CONGA" | translate }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+
+  </ion-content>

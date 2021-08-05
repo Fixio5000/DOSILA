@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true" *ngIf="user$ | async as user">
+  <div id="bg">
+    <ion-fab vertical="bottom" edge horizontal="center" slot="fixed">
+      <ion-fab-button color="light" routerLink="/login">
+        <ion-icon name="close-outline" color="medium"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+  <ion-list lines="none" class="ion-margin">
+    <ion-list-header>VERIFICACIÓN</ion-list-header>
+
+    <ion-text ><p class="ion-margin-horizontal">Gracias por registrarte, te hemos enviado un correo de confirmación a {{user.email}}</p></ion-text>
+    
+    <div align="right">
+      <ion-button type="submit" (click)="onSendEmail()" shape="round" strong="true" class="ion-margin-end" color="oro">
+        Reenviar
+        <ion-icon name="log-in" slot="end"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-list>
+</ion-content>

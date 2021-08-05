@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dosila-8ddf0": {
+      "hosting": {
+        "app": [
+          "dosila-8ddf0"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<ion-content [fullscreen]="true">
+  <ion-list class="ion-margin ion-text-center">
+    <ion-list-header><ion-label color="light">DoSiLa</ion-label></ion-list-header>
+    <ion-button color="light" expand="block" shape="round" routerLink="user-login">
+      Iniciar sesión</ion-button>
+    <ion-text color="light" routerLink="user-register"><p>Nuevo usuario? Registrate.</p></ion-text><br>
+    <img type="submit" (click)="onLoginGoogle()" class="logo" src="../../assets/img/google.svg">
+    <ion-text color="light" (click)="onLoginGoogle()"><p>Iniciar sesión con Google</p></ion-text><br>
+  </ion-list>
+</ion-content>
